@@ -5,8 +5,12 @@
 #### 后续计划  
 （1）前端代码准备。  
 #### 问题、思考及其他  
-（1）DBeaver比DataGrip难用多了:)  
+（1）选用datagrip替代dbeaver
 ## 2022-06-10 日志
 #### 已完成工作
-（1）Brevity is the soul of wit !  
+（1）Brevity is the soul of wit！  
   
+## 2022-06-11 日志
+#### 已完成工作
+（1）添加notes到原型设计图
+（2）修改原型设计图的interaction及个别页面
