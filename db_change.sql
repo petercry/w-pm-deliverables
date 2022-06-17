@@ -78,6 +78,7 @@ comment on column w_project_info.modified_user is '最近修改人';
 drop table w_project_moments;
 create table if not exists w_project_moments(
     id bigint primary key,
+	project_id bigint,
     status smallint default 0,
     create_date timestamp default now(),
     create_user varchar(100),
@@ -91,6 +92,7 @@ create table if not exists w_project_moments(
 );
 
 comment on table w_project_moments is '项目动态';
+comment on column w_project_moments.project_id is '项目ID(w_project_info表主键)';
 comment on column w_project_moments.occur_time is '发生时间';
 comment on column w_project_moments.contact_info is '联系方式';
 comment on column w_project_moments.customer_name is '客户联系人';
@@ -117,6 +119,7 @@ comment on column w_project_moments.modified_user is '最近修改人';
 drop table w_project_finance;
 create table if not exists w_project_finance(
     id bigint primary key,
+	project_id bigint,
     status smallint default 0,
     create_date timestamp default now(),
     create_user varchar(100),
@@ -129,6 +132,7 @@ create table if not exists w_project_finance(
 );
 
 comment on table w_project_finance is '项目财务';
+comment on column w_project_finance.project_id is '项目ID(w_project_info表主键)';
 comment on column w_project_finance.payment_type is '款项种类';
 comment on column w_project_finance.money_amount is '金额';
 comment on column w_project_finance.occur_date is '发生时间';
